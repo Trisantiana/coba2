@@ -10,6 +10,7 @@ include_once 'koneksi.php';
 			<th>No.</th>
 			<th>Username</th>
 			<th>Password</th>
+			<th>Email</th>
 		</tr>
 		<?php
 		$query = "select * from user";
@@ -23,6 +24,7 @@ include_once 'koneksi.php';
 			<td><?=$i?></td>
 			<td><?=$row['username']?></td>
 			<td><?=$row['password']?></td>
+			<td><?=$row['email']?></td>
 		</tr>
 		
 		<?php
